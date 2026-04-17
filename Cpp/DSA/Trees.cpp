@@ -14,6 +14,7 @@ struct Node {
 
 void inorder(Node* root) {
     if(root == NULL) return;
+    
 
     inorder(root->left);
     cout << root->data << " ";
