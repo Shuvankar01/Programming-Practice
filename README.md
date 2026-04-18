@@ -7,7 +7,6 @@ This repository contains my daily programming practice across multiple languages
 - Java
 - C
 - C++
-- Web Development (HTML, CSS)
 
 ## 📌 Topics
 - Data Structures & Algorithms
