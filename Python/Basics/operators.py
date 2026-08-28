@@ -1,10 +1,30 @@
-x=int(input("Enter the first element:"))
-y=int(input("Enter the second element:"))
-print("Below some basic operations:")
-print("Addition is:",(x+y))
-print("Subtraction is:",(x-y))
-print("Multiplication is:",(x*y))
-print("Division is:",(x/y))
-print("Division is:",(x//y))
-print("Exponent is:",(x**y))
-print("Modulo is:",(x%y))
+# Arithmetic operators
+
+a = 10
+b = 3
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Floor Division:", a // b)
+print("Modulus:", a % b)
+print("Power:", a ** b)
+
+# Comparison operators
+
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+
+# Logical operators
+
+x = True
+y = False
+
+print("AND:", x and y)
+print("OR:", x or y)
+print("NOT:", not x)
