@@ -1,7 +1,25 @@
-class Math:
-    def add(self, a, b, c=0):
-        return a + b + c
+# Polymorphism through a common interface
 
-m = Math()
-print(m.add(2, 3))
-print(m.add(2, 3, 4))
+
+class Dog:
+
+    def speak(self):
+        print("Dog says: Woof")
+
+
+class Cat:
+
+    def speak(self):
+        print("Cat says: Meow")
+
+
+class Cow:
+
+    def speak(self):
+        print("Cow says: Moo")
+
+
+animals = [Dog(), Cat(), Cow()]
+
+for animal in animals:
+    animal.speak()
