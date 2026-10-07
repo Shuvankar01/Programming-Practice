@@ -1,17 +1,28 @@
+# Abstraction using an abstract base class
+
 from abc import ABC, abstractmethod
 
-class Shape(ABC):
+
+class Vehicle(ABC):
+
     @abstractmethod
-    def area(self):
+    def start(self):
         pass
 
-class Rectangle(Shape):
-    def __init__(self, l, w):
-        self.l = l
-        self.w = w
 
-    def area(self):
-        return self.l * self.w
+class Car(Vehicle):
 
-r = Rectangle(5, 3)
-print("Area:", r.area())
+    def start(self):
+        print("Car starts with a key or button.")
+
+
+class ElectricCar(Vehicle):
+
+    def start(self):
+        print("Electric car starts silently.")
+
+
+vehicles = [Car(), ElectricCar()]
+
+for vehicle in vehicles:
+    vehicle.start()
